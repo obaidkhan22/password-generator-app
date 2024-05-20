@@ -1,0 +1,98 @@
+:root {
+  --accent-color: rgb(103, 185, 103);
+}
+
+h1 {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 3rem;
+  color: #e4e1e1;
+}
+
+.password-generator {
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2.5rem 3rem;
+  background-color: #2f2f2f;
+  color: #e4e1e1;
+  border-radius: 15px;
+  font-size: 2rem;
+  box-shadow: 0px 0px 20px var(--accent-color);
+}
+
+.password {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  text-transform: uppercase;
+  border: none;
+  color: #e4e1e1;
+  background-color: var(--accent-color);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: rgb(66, 141, 66);
+}
+
+.char-length {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+input[type="range"] {
+  width: 100%;
+  cursor: pointer;
+  accent-color: rgb(103, 185, 103);
+}
+
+.checkboxes {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 8px;
+  margin: 20px 0;
+}
+
+.checkbox input {
+  width: 17px;
+  height: 17px;
+  vertical-align: baseline;
+  accent-color: rgb(103, 185, 103);
+  cursor: pointer;
+  margin-right: 5px;
+}
+.password-strength {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.error-message p {
+  color: rgb(218, 99, 99);
+  margin-bottom: 10px;
+}
+
+.generate-btn {
+  padding: 2rem 0;
+  font-size: 2rem;
+}
+
+.weak {
+  color: rgb(243, 61, 61);
+}
+
+.medium {
+  color: yellow;
+}
+.strong {
+  color: rgb(66, 218, 66);
+}
